@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+</head>
+<body>
+
+    </nav>
+    <div class="container pull-request-list">
+        <div class="header">
+            <div class="row">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-xs-12 col-lg-8">
+                    <div>
+                        <div> 
+                        <h3><b>No. of commits:</b>
+                                <%=pullreqs.commits %>
+                            </h3>
+                            <h3><b>No of comments:</b>
+                                <%=pullreqs.comments %>
+                            </h3>
+                            <h3><b>User who opened:</b>
+                                <%=pullreqs.head.repo.owner.login %>
+                            </h3>
+                        
+                            <a href="<%= pullreqs.head.repo.html_url %>">Link to
+                                Github</a>
+                            <p><b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+        </div>
+</body>
+</html>
